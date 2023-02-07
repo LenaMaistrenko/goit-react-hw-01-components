@@ -1,33 +1,31 @@
 import PropTypes from 'prop-types';
-export function Profile({ username, tag, location, avatar, stats }) { 
-return (<div class="profile">
-  <div class="description">
-    <img
-      src={avatar}
-      alt="User avatar"
-      class="avatar"
-    />
-    <p class="name">{username}</p>
+import css from '../Profile/Profile.module.css';
+export function Profile({ username, tag, location, avatar, stats }) {
+  return (
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img src={avatar} alt="User avatar" className={css.avatar} />
+        <p className={css.name}>{username}</p>
         <p class="tag">@{tag}</p>
-    <p class="location">{location}</p>
-  </div>
+        <p class="location">{location}</p>
+      </div>
 
-  <ul class="stats">
-    <li>
-      <span class="label">Followers</span>
-            <span class="quantity">{stats.followers}</span>
-    </li>
-    <li>
-      <span class="label">Views</span>
-            <span class="quantity">{stats.views}</span>
-    </li>
-    <li>
-      <span class="label">Likes</span>
-            <span class="quantity">{stats.likes}</span>
-    </li>
-  </ul>
-</div>)
-
+      <ul className={css.stats}>
+        <li className={css.stats__item}>
+          <span class="label">Followers</span>
+          <span class="quantity">{stats.followers}</span>
+        </li>
+        <li className={css.stats__item}>
+          <span class="label">Views</span>
+          <span class="quantity">{stats.views}</span>
+        </li>
+        <li className={css.stats__item}>
+          <span class="label">Likes</span>
+          <span class="quantity">{stats.likes}</span>
+        </li>
+      </ul>
+    </div>
+  );
 }
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
@@ -38,5 +36,5 @@ Profile.propTypes = {
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,
-  }).isRequired
+  }).isRequired,
 };
