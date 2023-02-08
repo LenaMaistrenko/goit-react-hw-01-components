@@ -5,11 +5,29 @@
   border-collapse: collapse;
   border: 1px solid rgb(31, 140, 173);
 }
+.thead {
+border: 2px solid #c4e2eb;
+color: black;
 
+}
+.tablerow {
+font-size: 18px;
+font-weight: 600;
+
+
+}
 .tablerow:nth-child(odd) {
-  background-color: #6cd6f7;
+  background-color: #ffff;
 }
 
 .tablerow:nth-child(even) {
   background-color: #c4e2eb;
+}
+th{ 
+  font-size: 18px;
+}
+td, th {
+  color:rgb(54, 54, 54);
+text-align: center;
+padding: 10px;
 }
