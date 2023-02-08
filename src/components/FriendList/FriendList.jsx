@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import css from "../FriendList/FriendList.module.css"
+import css from '../FriendList/FriendList.module.css';
 import { FriendListItem } from './FriendListItem';
 export function FriendList({ friends }) {
   console.log(friends);
   return (
-      <ul className={css.friendlist}>
+    <ul className={css.friendlist}>
       {friends.map(({ id, avatar, name, isOnline }) => (
         <FriendListItem
           key={id}
@@ -21,9 +21,9 @@ FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.number.isRequired,
-     avatar: PropTypes.string.isRequired,
-        name: PropTypes.string.isRequired,
-       isOnline: PropTypes.bool.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
     })
   ),
 };

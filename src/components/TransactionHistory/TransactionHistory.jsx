@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from '../TransactionHistory/TransactionHistory.module.css'
+import css from '../TransactionHistory/TransactionHistory.module.css';
 export function TransactionHistory({ items }) {
   return (
     <table className={css.table}>
@@ -24,7 +24,6 @@ export function TransactionHistory({ items }) {
   );
 }
 
-
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.exact({
@@ -33,5 +32,5 @@ TransactionHistory.propTypes = {
       amount: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
     })
-  )
+  ),
 };

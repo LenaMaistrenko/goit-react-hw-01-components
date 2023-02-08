@@ -49,5 +49,5 @@
   padding: 10px 5px;
   gap: 10px;
   flex-basis: calc(100% / 3);
-border: 1px solid rgb(31, 140, 173);
+  border: 1px solid rgb(31, 140, 173);
 }

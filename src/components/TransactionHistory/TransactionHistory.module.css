@@ -6,11 +6,10 @@
   border: 1px solid rgb(31, 140, 173);
 }
 
-
 .tablerow:nth-child(odd) {
-    background-color: #6cd6f7;
+  background-color: #6cd6f7;
 }
 
 .tablerow:nth-child(even) {
-    background-color: #c4e2eb;
+  background-color: #c4e2eb;
 }

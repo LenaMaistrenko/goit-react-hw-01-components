@@ -5,7 +5,6 @@
   width: 400px;
   margin: 0 auto;
   padding: 0;
-  /* background-color: lavender; */
 }
 .item {
   width: 100%;
@@ -31,13 +30,11 @@
   composes: status;
   background-color: red;
 }
-.avatar{
-margin-left: 20px;
-margin-right: 20px;
-
+.avatar {
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.name{
-font-size: 16px;
-font-weight: 700;
-
+.name {
+  font-size: 16px;
+  font-weight: 700;
 }
