@@ -11,7 +11,7 @@ export function Statistics({ title, stats }) {
   //console.log('title', title, 'stats', stats);
   return (
     <section className={css.statistics}>
-      {title && <h2 class="title">{title}</h2>}
+      {title && <h2 className="title">{title}</h2>}
 
       <ul className={css.statlist}>
         {stats.map(({ id, label, percentage }) => {
@@ -21,8 +21,8 @@ export function Statistics({ title, stats }) {
               key={id}
               style={{ backgroundColor: getRandomCSSColor() }}
             >
-              <span class="label">{label}</span>
-              <span class="percentage">{percentage}%</span>
+              <span className="label">{label}</span>
+              <span className="percentage">{percentage}%</span>
             </li>
           );
         })}
